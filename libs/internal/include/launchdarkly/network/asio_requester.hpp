@@ -289,8 +289,8 @@ class AsioRequester {
         namespace asio = boost::asio;
         namespace system = boost::system;
 
-        using Sig = void(HttpResult result);
-        using Result = asio::async_result<std::decay_t<CompletionToken>, Sig>;
+        using Result = asio::async_result<std::decay_t<CompletionToken>,
+                                          void(HttpResult)>;
         using Handler = typename Result::completion_handler_type;
 
         Handler handler(std::forward<decltype(token)>(token));

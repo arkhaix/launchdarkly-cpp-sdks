@@ -49,8 +49,8 @@ class WorkerPool {
         namespace asio = boost::asio;
         namespace system = boost::system;
 
-        using Sig = void(RequestWorker*);
-        using Result = asio::async_result<std::decay_t<CompletionToken>, Sig>;
+        using Result = asio::async_result<std::decay_t<CompletionToken>,
+                                          void(RequestWorker*)>;
         using Handler = typename Result::completion_handler_type;
 
         Handler handler(std::forward<decltype(token)>(token));
