@@ -1,5 +1,27 @@
 # Changelog
 
+## [3.0.0](https://github.com/arkhaix/launchdarkly-cpp-sdks/compare/launchdarkly-cpp-server-redis-source-v2.1.14...launchdarkly-cpp-server-redis-source-v3.0.0) (2024-10-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* RedisDataSource::Create should return unique_ptr instead of shared_ptr ([#344](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/344))
+
+### Features
+
+* add LDAllFlagsState_Map C binding ([#350](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/350)) ([2aca898](https://github.com/arkhaix/launchdarkly-cpp-sdks/commit/2aca898074b16cbb34498c289869b7687413df51))
+* redis data source C bindings ([#345](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/345)) ([03b7de1](https://github.com/arkhaix/launchdarkly-cpp-sdks/commit/03b7de195febdcd4739d670448f5aefcbc2e9a2d))
+* redis source 1.0 ([#327](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/327)) ([152f139](https://github.com/arkhaix/launchdarkly-cpp-sdks/commit/152f139917356d262dfd84e518b0ba8c84d39765))
+* RedisDataSource::Create should return unique_ptr instead of shared_ptr ([#344](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/344)) ([07661c4](https://github.com/arkhaix/launchdarkly-cpp-sdks/commit/07661c4a8a6571fdf04d016f5bad5e69fb10216e))
+* server-side data system ([#304](https://github.com/arkhaix/launchdarkly-cpp-sdks/issues/304)) ([9a3737d](https://github.com/arkhaix/launchdarkly-cpp-sdks/commit/9a3737d09b1e1e57e5c7e6d30fb0c92f606d284c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * launchdarkly-cpp-server bumped from 3.6.2 to 4.0.0
+
 ## [2.1.14](https://github.com/launchdarkly/cpp-sdks/compare/launchdarkly-cpp-server-redis-source-v2.1.13...launchdarkly-cpp-server-redis-source-v2.1.14) (2024-10-08)
 
 
